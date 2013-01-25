@@ -2,7 +2,7 @@
 
 angular2App.controller('HomeCtrl', function( $scope, Video, Common )
 {
-
+    console.log(this);
 });
 
 angular2App.controller('LastVideosCtrl', function( $scope, Video, Common, $location, $timeout, $rootScope )
