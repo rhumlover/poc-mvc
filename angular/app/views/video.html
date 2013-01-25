@@ -1,0 +1,11 @@
+<div class="dmplayer" dm-player videoId="{{ video.id }}" video="{{ video }}"></div>
+
+<div class="page-player-infos">
+    <h3 class="pp-title">{{ video.title }}</h3>
+    <div class="pp-owner" style="background-image: url({{ video['owner.avatar_medium_url'] }})"></div>
+    <p class="pp-description" ng-bind-html-unsafe="video.description"></p>
+</div>
+
+<h4>Related Videos</h4>
+
+<div class="page-player-related" dm-videolist="related"></div>
